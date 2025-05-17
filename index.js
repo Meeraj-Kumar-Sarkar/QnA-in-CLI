@@ -28,7 +28,7 @@ const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 async function welcome() {
     const rainbowTitle = chalkAnimation.rainbow(
-        'Who Wants To Be A JavaScript Millionaire? \n'
+        'Welcome to JavaScript Code Basics\n'
     );
 
     await sleep();
@@ -36,7 +36,7 @@ async function welcome() {
 
     console.log(`
     ${chalk.bgBlue('HOW TO PLAY')} 
-    I am a process on your computer.
+    I am a process on your computer, testing your basic knowledge over JS.
     If you get any question wrong I will be ${chalk.bgRed('killed')}
     So get all the questions right...
 
@@ -70,12 +70,12 @@ async function askName() {
 
 function winner() {
     console.clear();
-    figlet(`Congrats , ${playerName} !\n $ 1 , 0 0 0 , 0 0 0`, (err, data) => {
+    figlet(`Congrats , ${playerName} !\n You are fire`, (err, data) => {
         console.log(gradient.pastel.multiline(data) + '\n');
 
         console.log(
             chalk.green(
-                `Programming isn't about what you know; it's about making the command line look cool`
+                `Programming isn't about what you know; it's about the path of learning for eternity`
             )
         );
         process.exit(0);
